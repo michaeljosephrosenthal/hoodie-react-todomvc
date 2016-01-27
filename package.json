@@ -1,18 +1,27 @@
 {
-  "name": "{{hoodie_appname}}",
+  "name": "hoodie-react-todomvc",
+  "homepage": "https://github.com/hoodiehq/hoodie-react-todomvc",
   "version": "1.0.0",
   "type": "app",
+  "keywords": [
+    "frontend-only",
+    "hapi",
+    "hoodie",
+    "nobackend",
+    "offline-first"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hoodiehq/hoodie-react-todomvc.git"
+  },
+  "license": "Apache-2.0",
+  "main": "www/index.html",
   "dependencies": {
     "hoodie-server": "~0.8.14",
     "hoodie-plugin-appconfig": "~0.1.0",
     "hoodie-plugin-email": "~0.1.1",
     "hoodie-plugin-users": "0.0.9"
   },
-  "subdomain": "{{hoodie_appname}}",
-  "domains": [
-    "admin.{{hoodie_appname}}.jit.su",
-    "couch.{{hoodie_appname}}.jit.su"
-  ],
   "scripts": {
     "start": "node node_modules/hoodie-server/bin/start"
   },
@@ -24,3 +33,4 @@
     ]
   }
 }
+
